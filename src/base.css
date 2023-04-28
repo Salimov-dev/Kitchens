@@ -1,0 +1,52 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+:root {
+  --appYellow: #fbd846;
+  --baseColor: #333333;
+}
+
+html,
+body {
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  color: #333333;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.pointinghand {
+  cursor: url("./assets/images/pointinghand.png"), pointer;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 900;
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 28px;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+}

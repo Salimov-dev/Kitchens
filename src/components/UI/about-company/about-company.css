@@ -1,0 +1,92 @@
+.about-company {
+  position: relative;
+}
+
+.about-company__container {
+  display: flex;
+}
+
+.about-company__rightSide {
+  width: 31rem;
+}
+
+.about-company__image-container {
+  background-image: url("../../../assets/images/header-section/kitchen-page.png");
+  background-color: burlywood;
+  background-position: right center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 58%;
+  bottom: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.about-company__info-block {
+  display: flex;
+  flex-direction: column;
+  flex: 5;
+}
+
+/* header */
+.about-company__info-block-header {
+  display: flex;
+  flex-direction: column;
+  max-width: 585px;
+  padding: 4rem 30px 5rem 0;
+}
+
+.about-company__info-block-header > :nth-child(1) {
+  font-size: 35px;
+  padding: 0;
+}
+
+.about-company__info-block-header > :nth-child(2) {
+  font-size: 35px;
+  font-weight: 700;
+  color: var(--appYellow);
+  padding: 0 0 1.5rem 0;
+}
+
+.about-company__info-block-header > :nth-child(3) {
+  font-size: 18px;
+}
+
+/* main */
+.about-company__info-block-main {
+  display: flex;
+  padding: 0 2rem 2.8rem 0;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+/* footer */
+.about-company__info-block-footer {
+  display: flex;
+  align-items: center;
+  padding: 0 4rem 3rem 0;
+  gap: 2.14rem;
+}
+
+.about-company__footer-btn {
+  flex: 3;
+}
+
+.about-company__gift {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 2;
+  text-align: center;
+  /* max-width: 263px; */
+}
+
+.about-company__gift > img {
+  width: 1.8rem;
+}
+
+

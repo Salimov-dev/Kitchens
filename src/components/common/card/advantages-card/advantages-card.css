@@ -1,0 +1,29 @@
+.advantages-card__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  text-align: center;
+  padding: 3rem 10px 20px 10px;
+  background-color: white;
+  width: 25%;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+.advantages-card__wrapper > img {
+  width: 6.15rem;
+  height: 6.15rem;
+  margin: 0 0 1.7rem 0;
+}
+
+.advantages-card__wrapper > span:nth-of-type(1) {
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin: 0 0 2.35rem 0;
+}
+
+.advantages-card__wrapper > span:nth-of-type(2) {
+
+}

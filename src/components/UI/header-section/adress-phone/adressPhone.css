@@ -1,0 +1,32 @@
+.address-phone {
+  background-color: var(--appYellow);
+}
+
+.address-phone__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.5rem;
+}
+
+.address-phone__address {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.address-phone__geo-tag-icon {
+  width: 1.4rem;
+}
+
+.address-phone__phone {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.2rem;
+  gap: 0.7rem;
+}
+
+.address-phone__call-icon {
+  width: 1.8rem;
+}

@@ -1,0 +1,86 @@
+.calculate-feedback-form__container {
+  background: #f5f5f5;
+  border-radius: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0 1.85rem 1.85rem;
+}
+
+.calculate-feedback-form__content {
+  flex: 3;
+}
+
+.calculate-feedback-form__content > :nth-child(1) {
+  font-weight: 900;
+  font-size: 1.57rem;
+  text-transform: uppercase;
+  padding: 0 2rem 2.14rem 0;
+}
+
+.calculate-feedback-form__content > :nth-child(2) {
+  font-weight: 400;
+  font-size: 1.14rem;
+  text-transform: uppercase;
+  padding: 0 2rem 2.78rem 0;
+}
+
+.calculate-feedback-form__footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.calculate-feedback-form__footer-left {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.calculate-feedback-form__footer-right {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.choose-by-style__kitchen-schema {
+  padding: 0 0 0 1.5rem;
+  flex: 1;
+  width: 100%;
+}
+
+.calculate-feedback-form__attach-icon {
+}
+
+.calculate-feedback-form__attach-block > img {
+  width: 50px;
+  height: 50px;
+}
+
+.calculate-feedback-form__attach-block > img:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.calculate-feedback-form__attach-block {
+  display: flex;
+  align-items: center;
+ padding: 2.5rem 0 0 0;
+}
+.calculate-feedback-form__attach-block > div {
+  font-size: 18px;
+  color: #737373;
+  padding: 0 20px 0 22px;
+}
+
+.calculate-feedback-form__footer-button {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 10px;
+  padding: 2rem 0 0 0;
+}
+
+.calculate-feedback-form__footer-button > span {
+  padding: 10px 0 0 0;
+}

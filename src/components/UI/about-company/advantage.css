@@ -1,0 +1,16 @@
+.about-company__advantage {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  font-weight: 500;
+  font-size: 1.14rem;
+}
+
+.about-company__advantage > img {
+  width: 2.2rem;
+  height: 2.2rem;
+  margin: 0 1rem 0 0;
+}
+
+
+

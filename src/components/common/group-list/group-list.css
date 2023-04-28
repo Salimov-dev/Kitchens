@@ -1,0 +1,28 @@
+.group-list__ul {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.group-list__ul > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 16px;
+  /* width: 100%; */
+  width: 11.8rem;
+  height: 2.85rem;
+  background: #f5f5f5;
+  border-radius: 30px;
+}
+
+.group-list__li.active {
+  color: var(--baseColor);
+  background-color: var(--appYellow);
+}
+
+.group-list__ul > li:hover {
+  cursor: pointer;
+}

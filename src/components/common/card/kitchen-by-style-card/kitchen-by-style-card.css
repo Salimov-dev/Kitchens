@@ -1,0 +1,19 @@
+.kitchen-by-style-card {
+  position: relative;
+  width: 31.3%;
+}
+
+.kitchen-by-style-card__open-icon {
+  position: absolute;
+  right: 9px;
+  bottom: 13px;
+}
+
+.kitchen-by-style-card:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.kitchen-by-style-card__image {
+  width: 100%;
+}

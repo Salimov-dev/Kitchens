@@ -1,0 +1,8 @@
+.text-field__input {
+  border: 1px solid #b0b0b0;
+  border-radius: 30px;
+  font-size: 1.42rem;
+  background-color: inherit;
+  padding: 1.42rem 1.1rem;
+  outline: none;
+}

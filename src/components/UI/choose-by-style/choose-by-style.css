@@ -1,0 +1,50 @@
+.choose-by-style__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4.9rem 15px;
+}
+
+.choose-by-style__subtitle {
+  font-weight: 300;
+  font-size: 1.42rem;
+  line-height: 2.14rem;
+  text-align: center;
+  padding: 1.85rem 0 4.14rem 0;
+}
+
+.choose-by-style__heading {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.choose-by-style__heading > h2:nth-child(2) {
+  color: var(--appYellow);
+}
+
+.choose-by-style__card-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 3.2rem 0 4.5rem 0;
+}
+
+.choose-by-style__filtering-block {
+  display: flex;
+  justify-content: space-between;
+  color: #818181;
+  align-items: start;
+}
+
+.choose-by-style__group-text {
+  font-weight: 600;
+  font-size: 1.28rem;
+  flex: 1;
+  padding: 8px 0 0 0;
+}
+
+.choose-by-style__group-list {
+  flex: 4;
+}
+

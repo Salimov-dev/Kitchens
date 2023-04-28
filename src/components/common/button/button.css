@@ -1,0 +1,32 @@
+.btn-regular {
+  font-weight: 700;
+  font-size: 16px;
+  font-style: normal;
+  background-color: transparent;
+  border: 1px solid #fbd846;
+  filter: drop-shadow(2px 2px 4px rgba(255, 216, 111, 0.4));
+  border-radius: 30px;
+  height: fit-content;
+  padding: 1.1rem 1.8rem 1.1rem 1.8rem;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.btn-regular:hover {
+  background-color: var(--appYellow);
+}
+
+.btn-regular-empty-color {
+}
+
+.btn-regular-empty-color:hover {
+  opacity: 0.8;
+}
+
+.btn-regular-yellow-color {
+  background-color: var(--appYellow);
+}
+
+.btn-regular-yellow-color:hover {
+  opacity: 0.8;
+}

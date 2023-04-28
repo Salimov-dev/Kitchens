@@ -1,0 +1,64 @@
+.kitchen-card__container {
+  width: 31.3%;
+  background: #ffffff;
+  box-shadow: 10px 10px 20px rgba(51, 51, 51, 0.05);
+}
+
+.kitchen-card__container:hover {
+  cursor: pointer;
+  color: #99cb38;
+}
+
+.kitchen-card__main {
+  padding: 24px 30px 32px 30px;
+}
+
+.kitchen-card__title,
+.kitchen-card__sub-title {
+  font-weight: 600;
+  font-size: 1.14rem;
+}
+
+.kitchen-card__sub-title {
+  padding: 0 0 22px 0;
+}
+
+.kitchen-card__prev-price {
+  font-weight: 600;
+  font-size: 1.14rem;
+  text-decoration-line: line-through;
+  color: #b2b2b2;
+  padding: 0 0 6px 0;
+}
+
+.kitchen-card__new-price {
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: #99cb38;
+}
+
+.kitchen-card__add-button {
+  font-size: 33px;
+  width: 40px;
+  height: 40px;
+  color: rgba(153, 203, 56, 1);
+  background: #f4f4f4;
+  border: 2px solid transparent;
+  border-radius: 50%;
+}
+
+.kitchen-card__container:hover .kitchen-card__add-button {
+  cursor: pointer;
+  color: white;
+  background: rgba(153, 203, 56, 1);
+}
+
+.kitchen-card__image {
+  width: 100%;
+}
+
+.kitchen-card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
