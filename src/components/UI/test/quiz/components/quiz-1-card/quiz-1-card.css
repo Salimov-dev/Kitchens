@@ -1,0 +1,72 @@
+.quiz-1__card {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 70%;
+  border: 3px solid #e6e6e6;
+  border-radius: 10px;
+  padding: 13px;
+  cursor: pointer;
+}
+
+.quiz-1__card_active {
+  border-color: #fbd846;
+}
+
+.quiz-1__radio-field {
+  display: flex;
+  justify-content: space-between;
+}
+
+.quiz-1__radio-field > span:nth-of-type(2) {
+  width: 90%;
+  text-align: center;
+  font-weight: 900;
+  font-size: 1.42rem;
+}
+
+.quiz-1__radio-button {
+  width: 0;
+  height: 0;
+  position: absolute;
+  opacity: 0;
+}
+
+.quiz-1__radio-custom {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.04);
+}
+
+.quiz-1__radio-custom::before {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--appYellow);
+  transform: translate(-50%, -50%) scale(0);
+  transition: 0.2s ease-in;
+}
+
+.quiz-1__radio-button:checked + .quiz-1__radio-custom::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.quiz-1__image-container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.quiz-1__image {
+  width: 100%;
+}

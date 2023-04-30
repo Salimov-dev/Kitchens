@@ -1,11 +1,10 @@
 .our-work {
   background: var(--appYellow);
-  /* padding: 0 15px; */
 }
 
 .our-work__container {
   text-align: center;
-  padding: 2.5rem 0 3rem 0;
+  padding: 2.5rem 1rem 3rem 1rem;
 }
 
 .our-work__container > span:nth-of-type(1) {
@@ -21,7 +20,8 @@
 .carousel__wrapper {
   position: relative;
   width: 100%;
-  padding: 0 15px 0 0;
+  padding: 0 0 0 0;
+  scroll-behavior: smooth;
 }
 
 .carousel {
@@ -29,6 +29,16 @@
   font-size: 0;
   cursor: pointer;
   overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.carousel__dragging {
+  /* cursor: grab; */
+  scroll-behavior: auto;
+}
+
+.carousel__dragging img {
+  pointer-events: none;
 }
 
 .carousel > img {
@@ -38,7 +48,7 @@
   margin-left: 1rem;
 }
 
-.carousel > img:first-child {
+.carousel > img:nth-of-type(2) {
   margin-left: 0;
 }
 
@@ -57,12 +67,12 @@
 }
 
 .carousel__arrow-prev {
-  left: -0%;
+  left: -3%;
   transform: rotate(180deg);
 }
 
 .carousel__arrow-next {
-  right: -0%;
+  right: -2%;
 }
 
 @media screen and (max-width: 900px) {

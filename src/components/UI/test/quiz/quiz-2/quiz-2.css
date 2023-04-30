@@ -1,0 +1,20 @@
+.quiz-2__choose-variant {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.quiz-2__quiz {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.quiz-2__quiz-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    gap: 1.78rem;
+}

@@ -1,0 +1,83 @@
+.consultations {
+  background-color: #262626;
+  padding: 3.35rem 0 4.2rem 0;
+}
+
+.consultations__container {
+  display: flex;
+}
+
+.consultations__content {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  /* flex: 3; */
+  width: 68%;
+}
+
+.consultations__content > h2 {
+  margin: 0 0 2.14rem 0;
+}
+
+.consultations__content-contacts {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  margin: 0 0 2rem 0;
+}
+
+.consultations__content > input {
+  margin: 0 0 2rem 0;
+}
+
+.consultations__content-footer {
+  display: flex;
+  gap: 2rem;
+}
+
+.consultations__content-footer > button {
+  width: 50%;
+}
+
+.consultations__content-footer > span {
+  width: 50%;
+  font-size: 0.85rem;
+  padding: 0 0.8rem 0 0;
+  color: #b0b0b0;
+}
+
+.consultations__container {
+  position: relative;
+  /* max-width: 1170px; */
+  /* margin: 0 auto; */
+}
+
+.consultations__image-container {
+  /* flex: 2; */
+  width: 32%;
+  position: relative;
+}
+
+.consultations__image {
+  background: url("../../../assets//images//consultations//kitchen-consultations.png");
+  width: 494.34px;
+  height: 395.87px;
+  /* background-position: right center; */
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0%;
+  left: 69%;
+  right: 0%;
+  bottom: 0%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+
+
+.consultations__kitchen {
+  position: absolute;
+  width: 120%;
+  height: 100%;
+}

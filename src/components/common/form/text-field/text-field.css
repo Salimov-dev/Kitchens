@@ -2,7 +2,8 @@
   border: 1px solid #b0b0b0;
   border-radius: 30px;
   font-size: 1.42rem;
+  width: 100%;
   background-color: inherit;
-  padding: 1.42rem 1.1rem;
+  padding: 1.1rem 1.8rem 1.1rem 1.8rem;
   outline: none;
 }

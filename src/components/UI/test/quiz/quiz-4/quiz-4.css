@@ -1,0 +1,96 @@
+.quiz-4 {
+  width: 100%;
+}
+
+.quiz-4__container {
+  height: 40rem;
+  background-color: white;
+  padding: 2.85rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.quiz-4__title {
+  width: 100%;
+  font-weight: 800;
+  font-size: 1.57rem;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+.quiz-4__title > span:nth-of-type(1) {
+  width: 100%;
+  text-align: center;
+}
+
+.quiz-4__title > span:nth-of-type(2) {
+  font-weight: 600;
+}
+
+.quiz-4__choose-variant {
+  display: flex;
+  align-items: center;
+
+  gap: 2rem;
+  width: 100%;
+  height: 40%;
+  flex-wrap: wrap;
+}
+
+.quiz-4__radio {
+  display: flex;
+  align-items: center;
+}
+
+.quiz-4__radio-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.14rem;
+  width: 100%;
+  border: 1px solid #c4c4c4;
+  border-radius: 30px;
+  padding: 19px 26px;
+}
+
+.quiz-4__radio-custom-text {
+  padding: 0 0 0 1rem;
+}
+
+.quiz-4__radio-custom {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.04);
+}
+
+.quiz-4__radio-button {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  position: absolute;
+}
+
+.quiz-4__radio-custom::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: var(--appYellow);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 0.2s ease-in;
+}
+
+.quiz-4__radio-button:checked + .quiz-4__radio-custom::before {
+  transform: translate(-50%, -50%) scale(1);
+}

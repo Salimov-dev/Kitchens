@@ -36,6 +36,10 @@ ul {
   cursor: url("./assets/images/pointinghand.png"), pointer;
 }
 
+.display-none {
+  display: none !important;
+}
+
 h1 {
   font-size: 28px;
   font-weight: 900;
@@ -49,4 +53,12 @@ h2 {
   padding: 0;
   margin: 0;
   text-transform: uppercase;
+}
+
+.no-pseudo:before,
+.no-pseudo:after,
+.no-pseudo *:before,
+.no-pseudo *:after {
+  content: none !important;
+  display: none !important;
 }

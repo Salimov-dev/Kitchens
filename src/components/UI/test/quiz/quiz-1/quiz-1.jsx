@@ -1,26 +1,38 @@
 import React from "react";
 import "./quiz-1.css";
-// import Image from "../../../../../assets/images/quiz/quiz-1/quiz-1.png";
-import ButtonRegular from "../../../../common/button/btn-regular";
+import PagesNumber from "../components/pages-number/pages-number";
+import PrevNextBlock from "../components/prev-next-block/prev-next-block";
+import Quiz1Card from "../components/quiz-1-card/quiz-1-card";
 
-const Quiz1 = () => {
+const Quiz1 = ({ page, onPrevPage, onNextPage, onChange, value, options, data }) => {
   return (
     <div className="quiz-1">
-      <div className="quiz__image"></div>
-      <div className="quiz__content">
-        <span>
-          <span style={{ color: "var(--appYellow)" }}>0</span>/5
-        </span>
-        <hr />
-        <span>
-          Ответьте на 5 вопросов и получите дизайн проект и расчет стоимости
-          кухни
-        </span>
-        <span>
-          <span style={{ color: "var(--appYellow)" }}>+</span> гарантированый
-          подарок при заказе кухни!
-        </span>
-        <ButtonRegular text="Узнать стоимость" fill={true} />
+      <div className="quiz-1__container">
+        <div className="quiz-1__title">
+          <span>
+            Какое{" "}
+            <span style={{ color: "var(--appYellow)" }}>
+              расположение кухни
+            </span>{" "}
+            вас интересует
+          </span>
+          <PagesNumber page={page} />
+        </div>
+        <div className="quiz-1__choose-variant">
+          {options.map((item) => (
+            <Quiz1Card
+              key={item.value}
+              imgSrc={item.image}
+              name="kitchenForm"
+              label={item.value}
+              value={item.value}
+              onChange={onChange}
+              item={item}
+              data={data}
+            />
+          ))}
+        </div>
+        <PrevNextBlock onPrevPage={onPrevPage} onNextPage={onNextPage} isChoosen={data.kitchenForm}/>
       </div>
     </div>
   );

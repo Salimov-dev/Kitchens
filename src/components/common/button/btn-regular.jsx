@@ -1,13 +1,25 @@
 import React from "react";
 import "./button.css";
 
-const ButtonRegular = ({ text, fill, options }) => {
+const ButtonRegular = ({
+  text,
+  fill,
+  options,
+  onClick,
+  optionText,
+  disabled,
+}) => {
   return (
     <button
-      className={"btn-regular " + (fill ? "btn-regular-yellow-color" : "btn-regular-empty-color")}
+      onClick={onClick}
+      className={
+        "btn-regular " +
+        (fill ? "btn-regular-yellow-color" : "btn-regular-empty-color")
+      }
       style={options}
+      disabled={disabled}
     >
-      {text}
+      {text} {optionText}
     </button>
   );
 };
