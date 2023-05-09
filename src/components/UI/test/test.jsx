@@ -51,7 +51,7 @@ const Test = () => {
   };
 
   return (
-    <div className="test">
+    <div className="test" id="quiz">
       <div className="container test__container">
         <div className="test__header">
           <div className="test__title">

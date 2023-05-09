@@ -12,5 +12,11 @@
   margin: 0 1rem 0 0;
 }
 
+@media screen and (max-width: 375px) {
+  .about-company__advantage {
+    font-size: 0.7rem;
+  }
+}
+
 
 

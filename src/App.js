@@ -10,11 +10,11 @@ import Test from "./components/UI/test/test";
 function App() {
   return (
     <div className="App">
-      {/* <HeaderSection /> */}
+      <HeaderSection />
       {/* <AboutCompany /> */}
-      {/* <PopularModels /> */}
+      <PopularModels/>
       {/* <ChooseByStyle /> */}
-      <Test />
+      {/* <Test /> */}
       {/* <OurWork /> */}
       {/* <Consultations /> */}
       {/* <Footer /> */}

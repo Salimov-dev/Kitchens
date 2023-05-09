@@ -36,7 +36,7 @@ const Quiz5 = ({ page, onPrevPage, onNextPage }) => {
             <TextField type="text" placeholder="Телефон" />
             <ButtonRegular text="Получить расчет" fill={true} />
             <span>
-              Нажимая кнопку “Позвоните мне”, вы соглашаетесь с условиями
+              Нажимая кнопку “Получить расчёт”, вы соглашаетесь с условиями
               Политики конфиденциальности
             </span>
           </div>

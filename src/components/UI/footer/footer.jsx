@@ -8,7 +8,7 @@ import Ok from "../../../assets/images/footer/ok.svg";
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <div className="footer" id="contacts">
       <div className="container footer__container">
         <div className="footer__company footer__flex-box">
           <img src={Logo} alt="logo" />

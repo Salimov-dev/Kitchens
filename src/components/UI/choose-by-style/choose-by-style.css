@@ -48,3 +48,8 @@
   flex: 4;
 }
 
+@media screen and (max-width: 1024px) {
+  .choose-by-style__card-wrapper {
+    gap: 1rem;
+  }
+}

@@ -3,7 +3,6 @@ import "./choose-by-style.css";
 import { kitchensByStyle, styles } from "../../../mock-data/kitchens-by-style";
 import KitchenByStyleCard from "../../common/card/kitchen-by-style-card/kitchen-by-style-card";
 import GroupList from "../../common/group-list/group-list";
-
 import CalculateFeedbackForm from "./feedback-form/calculate-feedback-form";
 
 const ChooseByStyle = () => {
@@ -18,7 +17,7 @@ const ChooseByStyle = () => {
   };
 
   return (
-    <div className="choose-by-style">
+    <div className="choose-by-style" id="choose-by-style">
       <div className="container choose-by-style__container">
         <div className="choose-by-style__heading">
           <h2>Выбор</h2>
@@ -38,6 +37,7 @@ const ChooseByStyle = () => {
               onItemSelect={handleSelect}
               selectedItem={selectedStyle}
             />
+
           </div>
         </div>
         <div className="choose-by-style__card-wrapper">

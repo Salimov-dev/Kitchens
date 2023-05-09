@@ -17,3 +17,9 @@
 .kitchen-by-style-card__image {
   width: 100%;
 }
+
+@media screen and (max-width: 1024px) {
+  .kitchen-by-style-card {
+    width: 49%;
+  }
+}

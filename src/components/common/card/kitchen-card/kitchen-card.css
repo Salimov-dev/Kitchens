@@ -2,11 +2,14 @@
   width: 31.3%;
   background: #ffffff;
   box-shadow: 10px 10px 20px rgba(51, 51, 51, 0.05);
+  transition: transform 0.2s ease-in;
 }
 
 .kitchen-card__container:hover {
   cursor: pointer;
   color: #99cb38;
+  transform: translateY(-5px);
+  
 }
 
 .kitchen-card__main {
@@ -61,4 +64,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .kitchen-card__container {
+    width: 49%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .kitchen-card__container {
+    width: 100%;
+  }
 }

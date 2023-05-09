@@ -7,10 +7,11 @@ import TimingWork from "../../../assets/images/header-section/timing.png";
 import Gift from "../../../assets/images/header-section/gift.png";
 import CompanyAdvantage from "./advantage";
 import ButtonRegular from "../../common/button/btn-regular";
+import { Link } from "react-scroll";
 
 const AboutCompany = () => {
   return (
-    <section className="about-company">
+    <section className="about-company" id="manufacturer">
       <div className="about-company__image-container"></div>
       <div className="container about-company__container">
         <div className="about-company__info-block">
@@ -58,8 +59,7 @@ const AboutCompany = () => {
                 options={{ width: "100%" }}
               />
             </div>
-
-            <div className="about-company__gift">
+            <Link className="about-company__gift" to="quiz" span="true" smooth={true}>
               <img src={Gift} alt="Подарок" />
               <p>
                 <strong>
@@ -68,7 +68,7 @@ const AboutCompany = () => {
                 </strong>{" "}
                 <br /> + гарантированный подарок при заказе кухни!
               </p>
-            </div>
+            </Link>
           </div>
         </div>
         <div className="about-company__rightSide"></div>

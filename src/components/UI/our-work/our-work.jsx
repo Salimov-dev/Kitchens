@@ -14,13 +14,13 @@ const OurWork = () => {
 
   const firstImage = carousel.current?.querySelectorAll("img")[1];
   let firstImageWidth = firstImage?.clientWidth + OneREM;
-  const scrollWidth =
-    carousel.current?.scrollWidth - carousel.current?.clientWidth;
   let positionDiff;
+  // const scrollWidth =
+  //   carousel.current?.scrollWidth - carousel.current?.clientWidth;
 
-  console.log("carousel.current?.scrollLeft", carousel.current?.scrollLeft);
-  console.log("scrollWidth", scrollWidth);
-  console.log(  carousel.current?.scrollLeft === scrollWidth);
+  // console.log("carousel.current?.scrollLeft", carousel.current?.scrollLeft);
+  // console.log("scrollWidth", scrollWidth);
+  // console.log(  carousel.current?.scrollLeft === scrollWidth);
 
   const handleDraggStart = (e) => {
     setIsDragStart(true);
@@ -36,23 +36,23 @@ const OurWork = () => {
     carousel.current.scrollLeft = prevScrollLeft - positionDiff;
   };
 
-  const autoSlide = () => {
-    if (
-      carousel.current.scrollLeft ===
-      carousel.current.scrollLeft - carousel.current.clientWidth
-    )
-      return;
-    positionDiff = Math.abs(positionDiff);
+  // const autoSlide = () => {
+  //   if (
+  //     carousel.current.scrollLeft ===
+  //     carousel.current.scrollLeft - carousel.current.clientWidth
+  //   )
+  //     return;
+  //   positionDiff = Math.abs(positionDiff);
 
-    let valDifference = firstImageWidth - positionDiff;
+  //   let valDifference = firstImageWidth - positionDiff;
 
-    if (carousel.current.scrollLeft > prevScrollLeft) {
-      return (carousel.current.scrollLeft +=
-        positionDiff > firstImageWidth / 3 ? valDifference : -positionDiff);
-    }
-    carousel.current.scrollLeft -=
-      positionDiff > firstImageWidth / 3 ? valDifference : -positionDiff;
-  };
+  //   if (carousel.current.scrollLeft > prevScrollLeft) {
+  //     return (carousel.current.scrollLeft +=
+  //       positionDiff > firstImageWidth / 3 ? valDifference : -positionDiff);
+  //   }
+  //   carousel.current.scrollLeft -=
+  //     positionDiff > firstImageWidth / 3 ? valDifference : -positionDiff;
+  // };
 
   const handleDraggStop = () => {
     setIsDragStart(false);
@@ -69,10 +69,10 @@ const OurWork = () => {
   };
 
   return (
-    <div className="our-work">
+    <div className="our-work" id="portfolio">
       <div className="container our-work__container">
         <span>
-          Наши <span style={{ color: "white" }}>работы</span>
+          Наши <span style={{ color: "var(--appYellow)" }}>работы</span>
         </span>
 
         <div className="carousel__wrapper">
